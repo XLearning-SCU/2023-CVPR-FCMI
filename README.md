@@ -6,6 +6,7 @@ Currently, one of our studies, which is closely related to this work, is under r
 ## Reference
 If you find our work useful in your research, please consider citing:
 
+```
 @inproceedings{
 anonymous2023deep,
 title={Deep Fair Clustering via Maximizing and Minimizing Mutual Information: Theory, Algorithm and Metric},
@@ -14,3 +15,4 @@ booktitle={Conference on Computer Vision and Pattern Recognition 2023},
 year={2023},
 url={https://openreview.net/forum?id=A-80aauq5p}
 }
+```
