@@ -3,7 +3,7 @@ PyTorch implementation for Deep Fair Clustering via Maximizing and Minimizing Mu
 
 Currently, one of our studies, which is closely related to this work, is under review.  Hence, the code, as well as the checkpoints, will remain unreleased until the acceptance of the study.
 
-##Reference
+## Reference
 If you find our work useful in your research, please consider citing:
 
 @inproceedings{
