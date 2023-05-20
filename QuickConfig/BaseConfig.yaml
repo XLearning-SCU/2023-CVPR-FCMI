@@ -1,0 +1,9 @@
+'dataset': 'Office'
+'batch_size': 512
+'NetVersion': 'Shuffle'
+'GroupWiseDecoder': True
+'WarmAll': 10
+
+'SoftAssignmentTemperature': 0.1
+'GlobalBalanceLoss': 0.04
+'OneHot': 0.01

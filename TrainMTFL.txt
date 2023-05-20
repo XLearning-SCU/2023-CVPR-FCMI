@@ -1,0 +1,83 @@
+=======Arguments=======
+/xlearning/pengxin/Softwares/anaconda3/envs/torch1120/bin/python
+dataset: MTFL
+MnistTrain: 1
+batch_size: 512
+train_epoch: 300
+NetVersion: Shuffle
+GroupWiseEncoder: False
+GroupWiseDecoder: 1
+WithFeatureB: False
+FeatureType: GlT_GaussainlizeAndTanh
+BatchNormType: 1001
+RepresentationType: Normalize
+ActivationType: Tanh
+representation_dim: 5
+RunInManuel: False
+VisualFreq: 20
+DrawTSNE: False
+DrawUmap: False
+WarmAll: 20
+WarmBalance: 0
+WarmConsistency: 0
+WarmUpProto: 0
+WarmOneHot: 0
+SoftAssignmentTemperatureBalance: 0.1
+SoftAssignmentTemperatureHot: 0.1
+SoftAssignmentTemperatureSelfCons: 0.2
+Reconstruction: 1.0
+ReconstructionEpoch: 999
+GlobalBalanceLoss: 0.0
+InfoGlobalLoss: 0.0
+InfoBalanceLoss: 0.04
+InfoFairLoss: 0.2
+GroupWiseBalanceLoss: 0.0
+ClusterWiseBalanceLoss: 0.0
+BalanceLossType: KL
+BalanceLossNoDetach: False
+OneHot: 0.04
+loss_cons: 0.0
+loss_self_cons: 0.0
+SelfConsLossType: Assignment
+Discriminative: 0.0
+DiscriminativeTest: 0
+reconstruct_all: 0
+Decenc: 0.0
+LearnRate: 0.001
+LearnRateDecayType: None
+WeightDecay: 0
+LearnRateWarm: 0
+betas_a: 0.9
+betas_v: 0.999
+seed: 9116
+resume: /xlearning/pengxin/FC_Cps/MTFL/Epoch299.checkpoint
+/xlearning/pengxin/Softwares/anaconda3/envs/torch1120/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/xlearning/pengxin/Softwares/anaconda3/envs/torch1120/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to /xlearning/pengxin/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth
+  0%|          | 0.00/97.8M [00:00<?, ?B/s]  0%|          | 24.0k/97.8M [00:00<22:53, 74.7kB/s]  0%|          | 40.0k/97.8M [00:00<19:15, 88.7kB/s]  0%|          | 104k/97.8M [00:00<07:38, 223kB/s]    0%|          | 136k/97.8M [00:00<08:06, 211kB/s]  0%|          | 176k/97.8M [00:01<10:50, 157kB/s]  0%|          | 240k/97.8M [00:01<07:00, 243kB/s]  0%|          | 320k/97.8M [00:01<04:51, 351kB/s]  1%|          | 560k/97.8M [00:01<02:21, 720kB/s]  1%|          | 664k/97.8M [00:01<02:09, 788kB/s]  1%|          | 752k/97.8M [00:01<03:02, 556kB/s]  1%|          | 976k/97.8M [00:02<01:57, 862kB/s]  1%|▏         | 1.30M/97.8M [00:02<01:22, 1.22MB/s]  2%|▏         | 2.22M/97.8M [00:02<00:34, 2.92MB/s]  3%|▎         | 2.59M/97.8M [00:02<00:48, 2.05MB/s]  3%|▎         | 3.30M/97.8M [00:02<00:33, 2.96MB/s]  4%|▍         | 4.16M/97.8M [00:02<00:23, 4.13MB/s]  6%|▌         | 5.59M/97.8M [00:03<00:17, 5.51MB/s]  7%|▋         | 6.63M/97.8M [00:03<00:14, 6.59MB/s]  8%|▊         | 7.37M/97.8M [00:03<00:26, 3.59MB/s] 10%|█         | 9.83M/97.8M [00:03<00:16, 5.69MB/s] 12%|█▏        | 11.4M/97.8M [00:04<00:16, 5.63MB/s] 12%|█▏        | 12.1M/97.8M [00:04<00:18, 4.76MB/s] 15%|█▍        | 14.4M/97.8M [00:04<00:14, 6.18MB/s] 16%|█▌        | 15.2M/97.8M [00:05<00:17, 4.90MB/s] 16%|█▌        | 15.7M/97.8M [00:05<00:20, 4.18MB/s] 19%|█▊        | 18.2M/97.8M [00:05<00:13, 6.03MB/s] 19%|█▉        | 18.8M/97.8M [00:05<00:17, 4.70MB/s] 20%|██        | 20.0M/97.8M [00:05<00:14, 5.70MB/s] 22%|██▏       | 21.2M/97.8M [00:06<00:11, 6.79MB/s] 23%|██▎       | 22.0M/97.8M [00:06<00:12, 6.53MB/s] 23%|██▎       | 22.9M/97.8M [00:06<00:16, 4.81MB/s] 24%|██▍       | 23.5M/97.8M [00:06<00:19, 3.92MB/s] 27%|██▋       | 25.9M/97.8M [00:07<00:12, 5.84MB/s] 27%|██▋       | 26.6M/97.8M [00:07<00:20, 3.57MB/s] 30%|██▉       | 28.9M/97.8M [00:08<00:17, 4.14MB/s] 30%|███       | 29.5M/97.8M [00:08<00:19, 3.61MB/s] 33%|███▎      | 31.9M/97.8M [00:08<00:13, 5.17MB/s] 33%|███▎      | 32.5M/97.8M [00:08<00:16, 4.25MB/s] 34%|███▍      | 33.5M/97.8M [00:09<00:13, 5.01MB/s] 36%|███▌      | 35.0M/97.8M [00:09<00:10, 6.00MB/s] 36%|███▋      | 35.7M/97.8M [00:09<00:10, 6.08MB/s] 37%|███▋      | 36.4M/97.8M [00:09<00:14, 4.53MB/s] 38%|███▊      | 36.9M/97.8M [00:09<00:17, 3.73MB/s] 40%|████      | 39.4M/97.8M [00:10<00:10, 5.78MB/s] 41%|████      | 40.0M/97.8M [00:10<00:16, 3.60MB/s] 44%|████▎     | 42.6M/97.8M [00:11<00:13, 4.34MB/s] 44%|████▍     | 43.1M/97.8M [00:11<00:15, 3.74MB/s] 47%|████▋     | 45.6M/97.8M [00:11<00:09, 5.47MB/s] 47%|████▋     | 46.3M/97.8M [00:11<00:09, 5.72MB/s] 48%|████▊     | 47.0M/97.8M [00:12<00:14, 3.64MB/s] 50%|█████     | 49.4M/97.8M [00:12<00:09, 5.26MB/s] 51%|█████     | 50.1M/97.8M [00:12<00:11, 4.34MB/s] 52%|█████▏    | 50.6M/97.8M [00:13<00:13, 3.70MB/s] 54%|█████▍    | 53.1M/97.8M [00:13<00:08, 5.50MB/s] 55%|█████▍    | 53.7M/97.8M [00:13<00:12, 3.64MB/s] 57%|█████▋    | 56.2M/97.8M [00:14<00:08, 5.31MB/s] 59%|█████▊    | 57.4M/97.8M [00:14<00:06, 6.15MB/s] 59%|█████▉    | 58.2M/97.8M [00:14<00:08, 4.96MB/s] 61%|██████    | 59.2M/97.8M [00:14<00:07, 5.73MB/s] 62%|██████▏   | 60.7M/97.8M [00:14<00:06, 6.42MB/s] 63%|██████▎   | 61.4M/97.8M [00:14<00:05, 6.71MB/s] 64%|██████▍   | 62.4M/97.8M [00:14<00:05, 7.27MB/s] 65%|██████▍   | 63.2M/97.8M [00:15<00:07, 5.04MB/s] 66%|██████▌   | 64.2M/97.8M [00:15<00:05, 6.12MB/s] 67%|██████▋   | 65.5M/97.8M [00:15<00:05, 6.42MB/s] 68%|██████▊   | 66.4M/97.8M [00:15<00:04, 6.97MB/s] 69%|██████▊   | 67.2M/97.8M [00:16<00:08, 3.70MB/s] 71%|███████   | 69.6M/97.8M [00:16<00:05, 5.67MB/s] 72%|███████▏  | 70.6M/97.8M [00:16<00:04, 6.29MB/s] 73%|███████▎  | 71.4M/97.8M [00:16<00:05, 4.80MB/s] 74%|███████▍  | 72.5M/97.8M [00:17<00:04, 5.77MB/s] 76%|███████▌  | 73.9M/97.8M [00:17<00:04, 6.26MB/s] 77%|███████▋  | 74.9M/97.8M [00:17<00:03, 6.92MB/s] 78%|███████▊  | 75.8M/97.8M [00:17<00:03, 7.45MB/s] 78%|███████▊  | 76.6M/97.8M [00:17<00:05, 4.10MB/s] 81%|████████  | 78.9M/97.8M [00:18<00:03, 5.20MB/s] 81%|████████▏ | 79.5M/97.8M [00:18<00:05, 3.42MB/s] 84%|████████▍ | 82.1M/97.8M [00:19<00:03, 5.12MB/s] 85%|████████▍ | 82.7M/97.8M [00:19<00:04, 3.51MB/s] 87%|████████▋ | 85.5M/97.8M [00:19<00:02, 5.30MB/s] 88%|████████▊ | 86.2M/97.8M [00:20<00:02, 4.45MB/s] 89%|████████▊ | 86.7M/97.8M [00:20<00:03, 3.84MB/s] 91%|█████████ | 89.1M/97.8M [00:20<00:01, 5.26MB/s] 92%|█████████▏| 89.7M/97.8M [00:20<00:01, 4.26MB/s] 93%|█████████▎| 90.7M/97.8M [00:21<00:01, 4.99MB/s] 94%|█████████▍| 92.1M/97.8M [00:21<00:01, 5.92MB/s] 95%|█████████▍| 92.8M/97.8M [00:21<00:00, 6.01MB/s] 96%|█████████▌| 93.5M/97.8M [00:21<00:01, 3.37MB/s] 99%|█████████▊| 96.4M/97.8M [00:22<00:00, 5.74MB/s] 99%|█████████▉| 97.1M/97.8M [00:22<00:00, 3.82MB/s]100%|██████████| 97.8M/97.8M [00:22<00:00, 4.52MB/s]
+torch.mean(x)==-0.11466330289840698, torch.std(x)==0.5310376286506653
+torch.min(x)==-0.7250906825065613, torch.max(x)==1.0
+torch.sqrt(torch.sum(x ** 2, dim=1, keepdim=True))==tensor([[23.6055],
+        [25.5792],
+        [22.9094],
+        ...,
+        [24.2430],
+        [24.1685],
+        [23.2173]])
+=> loading checkpoint '/xlearning/pengxin/FC_Cps/MTFL/Epoch299.checkpoint'
+=> loaded checkpoint '/xlearning/pengxin/FC_Cps/MTFL/Epoch299.checkpoint' (epoch 299)
+Save check point into /xlearning/pengxin/Codes/230520/RunSet0520_RePo5/ --dataset MTFL --resume Epoch299 --seed 9116/Checkpoints/Epoch299.checkpoint
+ACC= 70.2|70.150, NMI= 19.1|19.067, Bal= 90.4|90.423, MNCE= 99.8|99.817, Fmeasure= 32.0|32.018
+Clu\g    0,    1, 
+1145:  594,  551, 
+ 855:  406,  449, 
+Typ\g    0,    1, 
+ 692:  346,  346, 
+1308:  654,  654, 
+t\c     0       1   
+ 0: 320 300| 26  46|
+ 1: 274 251|380 403|
+Ending...
+2023-05-20 16:55:35 Dequeue 2023-05-20_16:55:01_000001.Process

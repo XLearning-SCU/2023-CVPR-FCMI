@@ -1,0 +1,92 @@
+
+\begin{table}[H]
+   \caption{MNIST-USPS and Color Reverse MNIST}
+   \label{Tab.MainTable-MNIST-USPS2}
+   \centering
+   %\small
+   %\setlength{\tabcolsep}{3.5pt}
+   \begin{tabular}{lcccccccc}
+       \toprule
+       &\multicolumn{3}{c}{MNIST-USPS}&\multicolumn{3}{c}{Color Reverse MNIST}\\
+       \midrule
+       Method & Acc & NMI & Balance & Entropy& Acc & NMI & Balance & Entropy\\
+       \midrule
+       AE[17] & $0.624$ & $0.504$ & $0.017$      & $0.357$ & $0.352$ & $0.005$ \\
+       DEC[32] & $0.586$ & $0.686$ & $0.000$     & $0.401$ & $0.480$ & $0.000$ \\
+    %   IMSAT & $0.804$ & $0.787$ & $0.000$     & $0.525$ & $0.630$ & $0.000$  \\
+       DAC[6] & $0.757$ & $0.703$ & $0.000$     & $0.309$ & $0.193$ & $0.623$  \\
+       ClGAN[26] & $0.343$ & $0.212$ & $0.000$  & $0.166$ & $0.034$ & $0.000$  \\
+       \midrule
+       ScFC[2] & $0.176$ & $0.053$ & $\textcolor{red}{\mathbf{0.120}}$   & $0.268$ & $0.105$ & $\textcolor{red}{\mathbf{1.000}}$ \\
+       SpFC[18] & $0.162$ & $0.048$ & $0.000$                           & $0.137$ & $0.020$ & $0.000$ \\
+       FCC[39] & $0.560$ & $0.461$ & $0.032$                             & $0.349$ & $0.295$ & $0.021$ \\
+       FAlg[3] & $0.621$ & $0.496$ & $0.093$  & $0.295$ & $0.206$ & $0.667$ \\
+       DFCV & $0.825$ & $0.789$ & $0.067$ &  $0.577$ & $0.679$ & $0.763$ \\
+      Towards & $0.725$ & $0.716$ & $0.039$ &  $0.425$ & $0.506$ & $0.430$ \\
+    %   DFDC & $0.936$ & $0.876$ & $0.119$ &  $0.589$ & $0.690$ & $0.946$ \\
+       Ours & $\textcolor{red}{\mathbf{0.961}}$ & $\textcolor{red}{\mathbf{0.908}}$ & $\textcolor{blue}{\mathbf{0.107}}$ &  $\textcolor{blue}{\mathbf{0.884}}$ & $\textcolor{blue}{\mathbf{0.864}}$ & $\textcolor{blue}{\mathbf{0.998}}$ \\
+       Ours$^{*}$ & $\textcolor{blue}{\mathbf{0.944}}$ & $\textcolor{blue}{\mathbf{0.883}}$ & $0.048$ &  $\textcolor{red}{\mathbf{0.951}}$ & $\textcolor{red}{\mathbf{0.893}}$ & $\textcolor{blue}{\mathbf{0.998}}$ \\
+       \bottomrule
+   \end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+   \caption{Office-31 and MTFL}
+   \label{Tab.MainTable-Office-31}
+   \centering
+   %\small
+   %\setlength{\tabcolsep}{3.5pt}
+   \begin{tabular}{lcccccc}
+       \toprule
+       &\multicolumn{3}{c}{Office-31}&\multicolumn{3}{c}{MTFL}\\
+       \midrule
+       Method & Acc & NMI & Balance & Entropy& Acc & NMI & Balance & Entropy\\
+       \midrule
+       ResNet50[14] & $0.641$ & $0.691$ & $0.000$ &  $0.648$ & $0.176$ & $0.406$ \\
+       DEC[32] & $0.546$ & $0.604$ & $0.000$ &  $0.520$ & $0.030$ & $0.711$ \\
+       DAC[6] & $0.063$ & $0.041$ & $0.054$ &  $0.563$ & $0.002$ & $0.950$ \\
+       ClGAN[26] & $0.516$ & $0.536$ & $0.000$ &  $0.727$ & $0.161$ & $0.490$ \\
+       \midrule
+       ScFC[2] & $0.090$ & $0.056$ & $\textcolor{red}{\mathbf{0.273}}$ &  $0.627$ & $0.030$ & $\textcolor{red}{\mathbf{1.000}}$ \\
+       SpFC[18] & $0.096$ & $0.109$ & $0.000$ &  $0.565$ & $0.040$ & $0.836$ \\
+       FCC[39] & $0.652$ & $0.693$ & $0.173$ &  $0.658$ & $0.174$ & $0.531$ \\
+       FAlg[3] & $0.689$ & $0.713$ & $\textcolor{blue}{\mathbf{0.196}}$ &  $0.660$ & $0.181$ & $0.666$ \\
+       DFCV & $\textcolor{blue}{\mathbf{0.692}}$ & $\textcolor{blue}{\mathbf{0.718}}$ & $0.117$ &  $\textcolor{blue}{\mathbf{0.719}}$ & $\textcolor{blue}{\mathbf{0.190}}$ & $\textcolor{blue}{\mathbf{0.986}}$ \\
+       Ours &  $0.682$ &  $\textcolor{blue}{\mathbf{0.712}}$ &  $0.105$ &   $0.645$ & $0.070$ & $0.753$ \\
+       Ours$^{*}$ &  $\textcolor{red}{\mathbf{0.712}}$ &  $\textcolor{red}{\mathbf{0.729}}$ &  $0.000$ &   $\textcolor{red}{\mathbf{0.768}}$ & $\textcolor{red}{\mathbf{0.238}}$ & $0.971$ \\
+       \bottomrule
+   \end{tabular}
+\end{table}
+\begin{table}[H]
+   \caption{HAR and RNA}
+   \label{Tab.MainTable-HAR-RNA}
+   \centering
+   %\small
+   %\setlength{\tabcolsep}{3.5pt}
+   \begin{tabular}{lcccccc}
+       \toprule
+       &\multicolumn{3}{c}{HAR}&\multicolumn{3}{c}{RNA}\\
+       \midrule
+       Method & Acc & NMI & Entropy& Acc & NMI & Entropy\\
+       \midrule
+       AE[17] & $0.558$ & $0.613$ & $0.092$          & $-$ & $-$ & $-$ \\
+       DEC[32] & $0.571$ & $0.662$ & $0.000$        & $-$ & $-$ & $-$ \\
+    %   IMSAT & $0.812$ & $0.803$ & $0.000$         & $0.401$ & $0.480$ & $0.000$ \\
+    %   DAC[6] & $-$ & $-$ & $-$                     & $-$ & $-$ & $-$ \\
+    %   ClGAN[26] & $-$ & $-$ & $-$               & $-$ & $-$ & $-$ \\
+       \midrule
+    %   ScFC[2] & $-$ & $-$ & $-$                 & $-$ & $-$ & $-$ \\
+    %   SpFC[18] & $-$ & $-$ & $-$                & $-$ & $-$ & $-$ \\
+    %   FCC[39] & $-$ & $-$ & $-$                 & $-$ & $-$ & $-$ \\
+       FAlg & $0.642$ & $0.618$ & $0.420$           & $0.401$ & $0.480$ & $0.000$ \\
+       DFCV & $-$ & $-$ & $-$                     & $0.166$ & $0.034$ & $0.000$ \\
+      Towards & $0.607$ & $0.661$ & $0.166$     & $-$ & $-$ & $-$ \\
+    %   DFDC & $0.862$ & $0.845$ & $0.468$      & $-$ & $-$ & $-$ \\
+       Ours & $\textcolor{blue}{\mathbf{0.781}}$ & $\textcolor{blue}{\mathbf{0.694}}$ & $\textcolor{blue}{\mathbf{0.262}}$ & $\textcolor{blue}{\mathbf{0.903}}$ & $\textcolor{blue}{\mathbf{0.869}}$ & $\textcolor{blue}{\mathbf{0.999}}$ \\
+       Ours$^{*}$ & $\textcolor{red}{\mathbf{0.782}}$ & $\textcolor{red}{\mathbf{0.769}}$ & $0.000$ &  $\textcolor{red}{\mathbf{0.961}}$ & $\textcolor{red}{\mathbf{0.912}}$ & $0.998$ \\
+       \bottomrule
+   \end{tabular}
+\end{table}
+

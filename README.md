@@ -8,7 +8,7 @@
 
 CVPR 2023
   
-[[Paper]](https://arxiv.org/pdf/2209.12396)                [[Discussion]](https://github.com/PengxinZeng/2023-CVPR-FCMI/issues) [[Full Code]](https://github.com/PengxinZeng/2023-CVPR-FCMI)  [[More Information]](https://github.com/PengxinZeng?tab=repositories)
+[[Paper]](https://arxiv.org/pdf/2209.12396)                [[Discussion]](https://github.com/PengxinZeng/2023-CVPR-FCMI/issues)  [[More Information]](https://github.com/PengxinZeng?tab=repositories)
 </div>
 
 ## Introduction

@@ -1,0 +1,96 @@
+=======Arguments=======
+/xlearning/pengxin/Softwares/anaconda3/envs/torch1120/bin/python
+dataset: ReverseMNIST
+MnistTrain: 1
+batch_size: 512
+train_epoch: 300
+NetVersion: Shuffle
+GroupWiseEncoder: False
+GroupWiseDecoder: 1
+WithFeatureB: False
+FeatureType: GlT_GaussainlizeAndTanh
+BatchNormType: 1001
+RepresentationType: Normalize
+ActivationType: Tanh
+representation_dim: 0
+RunInManuel: False
+VisualFreq: 20
+DrawTSNE: False
+DrawUmap: False
+WarmAll: 20
+WarmBalance: 0
+WarmConsistency: 0
+WarmUpProto: 0
+WarmOneHot: 0
+SoftAssignmentTemperatureBalance: 0.1
+SoftAssignmentTemperatureHot: 0.1
+SoftAssignmentTemperatureSelfCons: 0.2
+Reconstruction: 1.0
+ReconstructionEpoch: 999
+GlobalBalanceLoss: 0.0
+InfoGlobalLoss: 0.0
+InfoBalanceLoss: 0.04
+InfoFairLoss: 0.2
+GroupWiseBalanceLoss: 0.0
+ClusterWiseBalanceLoss: 0.0
+BalanceLossType: KL
+BalanceLossNoDetach: False
+OneHot: 0.04
+loss_cons: 0.0
+loss_self_cons: 0.0
+SelfConsLossType: Assignment
+Discriminative: 0.0
+DiscriminativeTest: 0
+reconstruct_all: 0
+Decenc: 0.0
+LearnRate: 0.001
+LearnRateDecayType: None
+WeightDecay: 0
+LearnRateWarm: 0
+betas_a: 0.9
+betas_v: 0.999
+seed: 0
+resume: /xlearning/pengxin/FC_Cps/REVMNIST/Epoch299.checkpoint
+LambdaClu: 0.04
+LambdaFair: 0.2
+/xlearning/pengxin/Codes/230520/RunSet0520_RePo5/ --dataset ReverseMNIST --resume Epoch299 --seed 0/TrainCode/DataSetMaster/dataset.py:64: UserWarning: Rev_MNIST index
+  warnings.warn('Rev_MNIST index')
+=> loading checkpoint '/xlearning/pengxin/FC_Cps/REVMNIST/Epoch299.checkpoint'
+=> loaded checkpoint '/xlearning/pengxin/FC_Cps/REVMNIST/Epoch299.checkpoint' (epoch 299)
+Save check point into /xlearning/pengxin/Codes/230520/RunSet0520_RePo5/ --dataset ReverseMNIST --resume Epoch299 --seed 0/Checkpoints/Epoch299.checkpoint
+ACC= 88.4|88.392, NMI= 86.4|86.373, Bal= 99.5|99.542, MNCE=100.0|100.000, Fmeasure= 92.7|92.688
+Clu\g    0,    1, 
+12036: 6019, 6017, 
+13136: 6568, 6568, 
+12195: 6104, 6091, 
+12146: 6076, 6070, 
+11619: 5816, 5803, 
+10781: 5388, 5393, 
+11775: 5884, 5891, 
+12379: 6188, 6191, 
+11745: 5877, 5868, 
+12188: 6080, 6108, 
+Typ\g    0,    1, 
+11846: 5923, 5923, 
+13484: 6742, 6742, 
+11916: 5958, 5958, 
+12262: 6131, 6131, 
+11684: 5842, 5842, 
+10842: 5421, 5421, 
+11836: 5918, 5918, 
+12530: 6265, 6265, 
+11702: 5851, 5851, 
+11898: 5949, 5949, 
+t\c      0         1         2         3         4         5         6         7         8         9    
+ 0: 5868 5867|   5    4|   4    4|         |   5    5|   5    5|  19   20|        1|  16   16|   1    1|
+ 1:    1    1|6516 6516| 122  121|  14   12|  19   19|   2    3|   4    4|  49   47|   3    4|  12   15|
+ 2:    4    4|   8    9|5801 5795|  17   17|  14   18|         |  10   12|  80   81|  24   22|         |
+ 3:    2    2|   8    9|  77   69|5909 5908|   9    8|  34   40|   1    1|  44   46|  43   43|   4    5|
+ 4:    2    1|         |  11   11|         |3114 3103|         |  30   28|   4    4|   5    5|2676 2690|
+ 5:    4    4|   1    1|   4    5|  57   56|   8   10|5264 5263|  47   48|   2    2|  27   26|   7    6|
+ 6:   89   89|   4    2|   2    2|         |   4    5|  36   36|5741 5746|         |  40   37|   2    1|
+ 7:   14   14|   9   11|  61   59|   3    3| 164  161|   6    6|         |5944 5944|   2    2|  62   65|
+ 8:   20   20|  13   13|  18   21|  23   21|  41   40|  23   21|  24   25|   7    8|5625 5622|  57   60|
+ 9:   15   15|   4    3|   4    4|  53   53|2438 2434|  18   19|   8    7|  58   58|  92   91|3259 3265|
+Ending...
+2023-05-20 17:11:09 Dequeue 2023-05-20_17:10:50_000001.Process

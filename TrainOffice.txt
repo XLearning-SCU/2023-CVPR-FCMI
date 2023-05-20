@@ -1,0 +1,168 @@
+=======Arguments=======
+/xlearning/pengxin/Softwares/anaconda3/envs/torch1120/bin/python
+dataset: Office
+MnistTrain: 1
+batch_size: 512
+train_epoch: 300
+NetVersion: Shuffle
+GroupWiseEncoder: False
+GroupWiseDecoder: 1
+WithFeatureB: False
+FeatureType: GlT_GaussainlizeAndTanh
+BatchNormType: 1001
+RepresentationType: Normalize
+ActivationType: Tanh
+representation_dim: 0
+RunInManuel: False
+VisualFreq: 20
+DrawTSNE: False
+DrawUmap: False
+WarmAll: 20
+WarmBalance: 0
+WarmConsistency: 0
+WarmUpProto: 0
+WarmOneHot: 0
+SoftAssignmentTemperatureBalance: 0.1
+SoftAssignmentTemperatureHot: 0.1
+SoftAssignmentTemperatureSelfCons: 0.2
+Reconstruction: 1.0
+ReconstructionEpoch: 999
+GlobalBalanceLoss: 0.0
+InfoGlobalLoss: 0.0
+InfoBalanceLoss: 0.04
+InfoFairLoss: 0.2
+GroupWiseBalanceLoss: 0.0
+ClusterWiseBalanceLoss: 0.0
+BalanceLossType: KL
+BalanceLossNoDetach: False
+OneHot: 0.04
+loss_cons: 0.0
+loss_self_cons: 0.0
+SelfConsLossType: Assignment
+Discriminative: 0.0
+DiscriminativeTest: 0
+reconstruct_all: 0
+Decenc: 0.0
+LearnRate: 0.001
+LearnRateDecayType: None
+WeightDecay: 0
+LearnRateWarm: 0
+betas_a: 0.9
+betas_v: 0.999
+seed: 0
+resume: /xlearning/pengxin/FC_Cps/OFFICE/Epoch299.checkpoint
+/xlearning/pengxin/Softwares/anaconda3/envs/torch1120/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/xlearning/pengxin/Softwares/anaconda3/envs/torch1120/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+torch.mean(x)==-0.10849952697753906, torch.std(x)==0.5449516773223877
+torch.min(x)==-0.7269272804260254, torch.max(x)==1.0
+torch.sqrt(torch.sum(x ** 2, dim=1, keepdim=True))==tensor([[24.3025],
+        [24.2172],
+        [25.0194],
+        ...,
+        [25.5545],
+        [25.0868],
+        [25.8095]])
+=> loading checkpoint '/xlearning/pengxin/FC_Cps/OFFICE/Epoch299.checkpoint'
+=> loaded checkpoint '/xlearning/pengxin/FC_Cps/OFFICE/Epoch299.checkpoint' (epoch 299)
+Save check point into /xlearning/pengxin/Codes/230520/RunSet0520_RePo5/ --dataset Office --resume Epoch299 --seed 0/Checkpoints/Epoch299.checkpoint
+ACC= 70.0|69.989, NMI= 71.2|71.160, Bal= 22.6|22.581, MNCE= 90.6|90.643, Fmeasure= 79.7|79.728
+Clu\g    0,    1, 
+ 123:   94,   29, 
+ 103:   82,   21, 
+ 125:   97,   28, 
+ 100:   80,   20, 
+ 117:   93,   24, 
+ 221:  176,   45, 
+ 201:  152,   49, 
+  92:   70,   22, 
+  84:   64,   20, 
+   4:    1,    3, 
+ 148:  117,   31, 
+ 118:   93,   25, 
+ 145:  114,   31, 
+ 130:  102,   28, 
+ 132:  103,   29, 
+ 140:  109,   31, 
+ 172:  134,   38, 
+ 130:  101,   29, 
+ 167:  132,   35, 
+  78:   62,   16, 
+  48:   38,   10, 
+ 138:  108,   30, 
+ 119:   94,   25, 
+  66:   51,   15, 
+ 122:   94,   28, 
+ 114:   85,   29, 
+  86:   64,   22, 
+ 109:   83,   26, 
+  96:   77,   19, 
+ 108:   85,   23, 
+  76:   62,   14, 
+Typ\g    0,    1, 
+ 121:   92,   29, 
+ 103:   82,   21, 
+ 100:   72,   28, 
+  94:   82,   12, 
+  52:   36,   16, 
+ 125:   94,   31, 
+ 131:   91,   40, 
+ 115:   97,   18, 
+ 118:   97,   21, 
+ 100:   81,   19, 
+ 126:   99,   27, 
+ 127:  100,   27, 
+ 130:  100,   30, 
+ 117:   98,   19, 
+ 130:  100,   30, 
+ 142:   99,   43, 
+ 130:  100,   30, 
+ 121:   94,   27, 
+ 124:   96,   28, 
+ 127:   95,   32, 
+ 109:   93,   16, 
+ 120:  100,   20, 
+ 128:   98,   30, 
+ 125:   98,   27, 
+ 130:   90,   40, 
+  86:   75,   11, 
+ 125:  100,   25, 
+ 129:   99,   30, 
+ 123:   99,   24, 
+ 119:   96,   23, 
+  85:   64,   21, 
+t\c    0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    26    27    28    29    30  
+ 0: 87 29|     |     |     |     |     |     |     |     |     |     |     | 1   |     |     |     | 4   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+ 1:      |81 21|     |     |     |     | 1   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+ 2:      |     |70 28|     |     |     | 1   |     |     |     |     |     |     |     |     |     | 1   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+ 3:  1   |     | 1   |71 12|     |     |     | 4   |     |     |     |     |     |     |     |     |     |     | 1   |     |     |     |     |     | 1   | 1   |     | 1   | 1   |     |     |
+ 4:  1   |     |     |     |24 16|     |     |     |     |     | 3   |     |     |     |     |     |     | 1   | 3   |     |     |     |     |     |     |     | 2   |     |     | 2   |     |
+ 5:      |     |     |     |     |88 28|     |     |     |     | 1   | 3  1|     |     | 1   |     |     |     | 1  1|     |     |     |     |     |     |     |     |     |     |     |    1|
+ 6:      |     |     | 1   | 1   | 1   |80 39| 3  1|     |     | 4   |     |     |     |     |     |     | 1   |     |     |     |     |     |     |     |     |     |     |     |     |     |
+ 7:      |     | 4   |     |11  2|     |13   |51 14| 2   |     |     |     |     | 1  2|     |     | 5   | 1   |     | 2   | 1   |     |     |     | 1   |     |     | 1   |     | 2   | 2   |
+ 8:      |     |     |     |     | 1   |     |     |47 18|     |     | 2   |15   |     |     |15   |     |     | 2   | 1   |     |    1|    1| 2   |    1|     |     | 4   |     | 4   | 4   |
+ 9:      |     |     | 4  8|     |     |53 10| 1   | 5   |     |     |     |     |13   |     |     |     |     |     | 1   |     | 2  1|     |     | 1   |     |     |     |     |     | 1   |
+10:      |     | 1   |     |     |     |     |     |     |     |92 27|     |     |     |     |     |     |     |     |     | 3   |     |     |     |     |     | 1   |     | 1   | 1   |     |
+11:      |     |     |     |     | 4   |     |     |     | 1  3|     |87 24| 1   |     | 1   |     | 1   |     |     | 1   |     |     | 1   | 1   |     | 2   |     |     |     |     |     |
+12:      |     |     |     |     |     |     |     |     |     |     |     |93 29|     |     | 3   |     |     | 1   |     |     |     |     | 1   |     |     |     |    1| 2   |     |     |
+13:      |     | 1   | 1   |     |     |     | 2   |     |     |     | 1   |     |75 16|     |     | 1   |     | 1   |     |     | 2  3|     | 4   | 3   |     | 2   | 1   | 2   | 2   |     |
+14:      |     |     |     |     | 8  2|     |     | 1   |     |     |     |     |     |91 22|     |    1|     |     |     |     |     |     |     |     |     |     |     |     |     |    5|
+15:      |     |     |     |     |     | 2   |    7|    2|     |     |     | 1   |     |     |91 29|     |     | 1   |     |     |    1|     | 1   |     |     |     | 1  4| 1   | 1   |     |
+16:      |     |     |     |     |     |     |     | 1   |     | 2   |     |     |     | 1   |     |96 26|     |     |     |    4|     |     |     |     |     |     |     |     |     |     |
+17:      |     |     |     | 3  1|     |     |     |     |     | 1   |     |     |     |     |     |     |89 26|     |     |     |     |     |     |     |     | 1   |     |     |     |     |
+18:      | 1   |     |     |     |     |     |     | 3   |     |     |     |     |     |     |     |     |     |68 28|     | 1   |     |     |     |12   | 4   |     |     | 3   |     | 4   |
+19:      |     |     | 1   | 6   | 1   |     |     |     |     | 1   |     |     |     |     |     |     |     | 2   |55 10|     |     |     |     |     | 1 22| 2   |     |     | 3   |23   |
+20:      |     |     |     |     |68 15|     |     |     |     |    1|     |     |     | 1   |     |     |     | 6   |     |     | 2   | 1   | 1   |     |     |     |     |12   | 2   |     |
+21:      |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |94 20|     | 2   | 1   |     |     |     | 2   | 1   |     |
+22:      |     |     |     |     |     |     |     | 1   |     |     |     |    2|    1| 4   |     |     |     | 1   |     | 1   | 1  3|86 21| 2  1|     |     |     |     |     | 2  2|     |
+23:      |     | 3   | 1   | 4   |     |     |     |     |     | 1  3|     |     | 2  7|     |     | 1   |     |13   |     |16   | 1  1| 4   |19  5|     | 3   | 6   |     | 7  5|14  6| 3   |
+24:  2   |     |     | 1   |     | 1   |     |     |     |     |     |     |     | 3  2|     |     |     |     |11  5|     |     | 1   |     |     |64 21| 1   |     |     | 4 12|     | 2   |
+25:      |     |     |     | 2   | 2   |     | 1   |     |     | 2   |     |     | 2   |     |     |     |     | 2   |    3|     | 1   |     |     |     |60  7| 1   |     | 1   |     | 1  1|
+26:  1   |     | 7   |     | 2   |     |     |     |     |     | 2   |     |     | 1   | 2   |     | 4   |     | 9   |    3| 7   |     |     |     |     |13   |46 22|     |     | 1   | 5   |
+27:      |     |     |     | 2   | 2   |     | 5   | 2   |     | 1   |     | 3   |     | 2   |    2| 3  8|     |     |     |    4|     | 2  1| 1   |     |     |     |73 13|     | 1   | 2  2|
+28:      |     | 1   |     | 3   |     |     | 1   |     |     |     |     |     |     |    7|     |10   |     | 4   | 2   | 1   | 3   |     |16  8|     |     | 2   |    5|40  2|13  2| 3   |
+29:  1   |     | 9   |     | 4  1|     | 1   |     |     |     | 5   |     |     | 2   |     |     | 7  3| 1   | 5   |     | 8   | 1   |    2| 1  1| 2   |     | 1   | 2  3| 1   |36 13| 9   |
+30:  1   |     |     |     |31  4|     | 1   | 2   | 2   |     | 2   |     |     | 3   |     |     | 1   | 8  3| 1  1|     |    2|     |     |     | 9  6|     |     |     |     |     | 3  5|
+Ending...
+2023-05-20 16:56:14 Dequeue 2023-05-20_16:56:01_002001.Process

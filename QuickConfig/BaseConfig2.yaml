@@ -1,0 +1,14 @@
+'dataset': 'MNISTUSPS'
+'batch_size': 512
+'NetVersion': 'Shuffle'
+'GroupWiseDecoder': True
+'WarmAll': 20
+
+'SoftAssignmentTemperatureBalance': 0.2
+'SoftAssignmentTemperatureHot': 0.2
+'SoftAssignmentTemperatureSelfCons': 0.2
+'GlobalBalanceLoss': 0.00
+'OneHot': 0.00
+'SelfConsLossType': 'Assignment'
+'FeatureType': 'Tanh'
+'ActivationType': 'Sigmoid'

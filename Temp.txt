@@ -1,0 +1,2 @@
+scp -r '/mnt/18t/pengxin/Data/ImageClassification/Office'  pengxin@192.168.49.47:/xlearning/pengxin/FC_Cps
+scp -r '/mnt/18t/pengxin/Data/ImageClassification/Rev_MNIST'  pengxin@192.168.49.47:/xlearning/pengxin/FC_Cps
