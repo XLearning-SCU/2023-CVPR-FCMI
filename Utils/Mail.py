@@ -284,9 +284,9 @@ class MailSender:
 def send(mail_title="input('mail_title: ')", mail_text="input('mail_text: ')"):
     """
     样例输入如下(去除前导空格):
-    2279296959@qq.com
-    latlvfjooqwweaio(你的授权码)
-    1127813917@qq.com
+    ...@qq.com
+    ...(你的授权码)
+    ...@qq.com
     smtp.qq.com
     Test_测试
     This is a test. 这是一个测试
@@ -299,9 +299,9 @@ def send(mail_title="input('mail_title: ')", mail_text="input('mail_text: ')"):
     # mail_smtp = input('mail_smtp: ')
     # mail_title = input('mail_title: ')
     # mail_text = input('mail_text: ')
-    mail_address2 = '2279296959@qq.com'
+    mail_address2 = '...@qq.com'
     mail_pwd = 'lacegkbrwkwvfhfg'
-    mail_address = '1127813917@qq.com'
+    mail_address = '...@qq.com'
     mail_smtp = 'smtp.qq.com'
     # mail_imap = 'imap.qq.com'
 
@@ -317,8 +317,8 @@ def send(mail_title="input('mail_title: ')", mail_text="input('mail_text: ')"):
 def receive():
     """
     样例输入如下(去除前导空格):
-    2279296959@qq.com
-    latlvfjooqwweaio(你的授权码)
+    ...@qq.com
+    ...(你的授权码)
     imap.qq.com
 
     :return:
