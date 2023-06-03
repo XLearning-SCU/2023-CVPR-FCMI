@@ -90,7 +90,7 @@ if __name__ == "__main__":
         args.InfoBalanceLoss = args.LambdaClu
         args.OneHot = args.LambdaClu
     if args.LambdaFair:
-        args.InfoFairLoss = args.InfoFairLoss
+        args.InfoFairLoss = args.LambdaFair
 
     print('=======Arguments=======')
     print(path_operator.python_path)
